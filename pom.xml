@@ -11,6 +11,8 @@
 
     <artifactId>shared-lib</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
     <name>Common Library for all Re used codes</name>
     <description>Ecommerce SharedLib</description>
     <url/>
@@ -19,6 +21,15 @@
         <io.jsonwebtoken>0.12.6</io.jsonwebtoken>
         <jakarta.servlet>6.1.0</jakarta.servlet>
     </properties>
+    <repositories>
+        <repository>
+            <id>codeartifact</id>
+            <url>https://ecommerce-domain-677450898543.d.codeartifact.ap-southeast-1.amazonaws.com/maven/ecommerce-shared/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
