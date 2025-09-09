@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     DOMAIN: "ecommerce-domain"
-    REPO: "shared-lib"
+    REPO: "ecommerce-shared-lib"
     REGION: "ap-southeast-1"
 
 phases:

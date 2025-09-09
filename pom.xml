@@ -9,7 +9,7 @@
         <relativePath/>
     </parent>
 
-    <artifactId>shared-lib</artifactId>
+    <artifactId>ecommerce-shared-lib</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
