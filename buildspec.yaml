@@ -51,7 +51,7 @@ phases:
     commands:
       - echo "[BUILD] Starting Maven build..."
       - mvn clean install -s ~/.m2/settings.xml -DskipTests -U
-      - mvn deploy -s ~/.m2/settings.xml -DskipTests
+      - mvn deploy -s ~/.m2/settings.xml -DskipTests -DuniqueVersion=true
 
 artifacts:
   files:
