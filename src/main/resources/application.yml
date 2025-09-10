@@ -1,9 +1,3 @@
-server:
-  port: 8080
 spring:
   application:
     name: shared-lib
-
-jwt:
-  secret: SOME256BIT_SECRET_KEY_SHOULD_BE_32+CHARS_ECOMMERCE_256_CHARS_DEMO_INVERT
-  expiration: 3600000
