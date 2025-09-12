@@ -3,20 +3,19 @@ package com.ecommerce.security;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
 
-@Component
+@Deprecated // Replaced by InternalJwtVerifier (RSA + JWKS). Remove once callers migrate.
+// @Component - REMOVED to prevent autowiring conflicts during migration
 public class JwtUtil {
 
-    @Value("${jwt.secret}")
+    // @Value("${jwt.secret}") - REMOVED to prevent property injection errors
     private String jwtSecret;
 
-    @Value("${jwt.expiration}")
+    // @Value("${jwt.expiration}") - REMOVED to prevent property injection errors
     private long expiration;
 
     private SecretKey getSigningKey() {

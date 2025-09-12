@@ -19,6 +19,7 @@
         <java.version>21</java.version>
         <io.jsonwebtoken>0.12.6</io.jsonwebtoken>
         <jakarta.servlet>6.1.0</jakarta.servlet>
+    <nimbus.jose.version>9.40</nimbus.jose.version>
     </properties>
     <repositories>
         <repository>
@@ -61,6 +62,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>${nimbus.jose.version}</version>
         </dependency>
 
     </dependencies>
